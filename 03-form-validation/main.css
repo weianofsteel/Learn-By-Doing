@@ -1,0 +1,93 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+#registration {
+    left: 50%;
+    margin: 2rem 0;
+    position: absolute;
+    top: 15%;
+    transform: translateX(-50%);
+    width: 350px;
+    z-index: 1;
+    background: #a6caee;
+}
+
+#box {
+    text-align: center;
+    width: 350px;
+    height:350px;
+    background: #ebf1f7;
+    border-radius: 10%;
+}
+
+.welcome {
+  background-color: #a6caee;
+}
+
+.title {
+    color: black;
+    text-align: center;
+}
+
+/* 8bit */
+
+.container {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: -130px;
+  }
+  
+  .pixel {
+    position: relative;
+  }
+  .pixel::before {
+    content: "";
+  
+    /* 一個點的大小(例:20px x 20px) */
+    width: 40px;
+    height: 40px;
+    /* box-shadow 著色，偽元素設為透明 */
+    background-color: transparent;
+  
+    /* 調整偽元素位置，讓左上角成為(0,0) */
+    position: absolute;
+    top: -20px;
+    left: -20px;
+  }
+
+  .pixel.one::before {
+    box-shadow:
+      40px   40px #704b16,
+      80px   40px #704b16,
+      120px   40px #704b16,
+      160px   40px #704b16,
+      200px  40px #704b16,
+      40px   80px #704b16,
+      80px   80px #fdb778,
+      120px   80px #fdb778,
+      160px   80px #fdb778,
+      200px  80px #704b16,
+      40px   120px #fdb778,
+      80px   120px #333333,
+      120px   120px #fdb778,
+      160px   120px #333333,
+      200px  120px #fdb778,
+      40px   160px #fdb778,
+      80px   160px #fdb778,
+      120px   160px #fdb778,
+      160px   160px #fdb778,
+      200px  160px #fdb778,
+      40px  200px #fdb778,
+      80px  200px #c70300,
+      120px  200px #c70300,
+      160px  200px #c70300,
+      200px 200px #fdb778;
+  }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Validation</title>
+    <meta charset="utf-8" />
+    
+    <!-- stylesheets -->
+	<link rel="stylesheet" href="main.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    
+    <script src="script.js"></script>
+</head>
+
+<body id="registration">
+    <div id="box">
+    <h1>Sign up</h1>
+    <form action="welcome.html">
+        <label>
+            User ID
+            <br /><input type="text" id="user_id" />
+            <br /><small style="color: red;" class="warning-string">User ID format is not correct</small>
+        </label><br />
+        <label>
+            E-mail
+            <br /><input type="email" id="user_email" />
+            <br /><small style="color: red;" class="warning-string">Email format is not correct</small>
+        </label><br />
+        <label>
+            Password
+            <br /><input type="password" id="user_password" />
+            <br /><small style="color: red;" class="warning-string">At least 8 characters long</small>
+        </label><br />
+        <label>
+            Password Confirmation
+            <br /><input type="password" id="user_password_confirmation" />
+            <br /><small style="color: red;" class="warning-string">Password confirmation format is not correct</small>
+        </label><br />
+        <button id="submit-button" type="submit" disabled >submit</button>
+    </form>
+    </div>
+    <br />
+    
+    <script>
+        var signUp = new SignUp();
+    </script>
+</body>
+
+</html>

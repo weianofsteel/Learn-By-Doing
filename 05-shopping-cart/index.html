@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lego | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" async></script>
+        <script src="https://kit.fontawesome.com/47bf25afad.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        
+        <!-- stylesheet -->
+        <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display:700" rel="stylesheet">
+    </head>
+    <body>
+        <header class="main-header">
+            
+            <h1 class="shop-name shop-name-large">Lego Shopping Cart</h1>
+        </header>
+        
+        <section class="container content-section">
+            <h2 class="section-header"><i class="fab fa-hotjar"></i> What's hot!</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">LEGO Star Wars</span>
+                    <h2>75212 Millennium Falcon</h2>
+                    <img class="shop-item-image" src="img/item1.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$99</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="godown()">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">LEGO Harry Potter</span>
+                    <h2>71043 Hogwarts Castle</h2>
+                    <img class="shop-item-image" src="img/item2.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$299</span>
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="godown()">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">LEGO 71044 Disney</span>
+                    <h2>71044 Train and Station</h2>
+                    <img class="shop-item-image" src="img/item3.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$159</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="godown()">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">LEGO Jurassic Park</span>
+                    <h2>75936 T. rex Rampage</h2>
+                    <img class="shop-item-image" src="img/item4.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$119</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="godown()">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">LEGO Marvel Avengers</span>
+                    <h2>76125 Iron Man Hall of Armor</h2>
+                    <img class="shop-item-image" src="img/item5.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$109</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="godown()">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">LEGO Ideas</span>
+                    <h2>21319 Friends</h2>
+                    <img class="shop-item-image" src="img/item6.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$69</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="godown()">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">LEGO Creator</span>
+                    <h2>10256 Taj Mahal</h2>
+                    <img class="shop-item-image" src="img/item7.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$199</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="godown()">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">LEGO LOTR</span>
+                    <h2>79008 Pirate Ship Ambush</h2>
+                    <img class="shop-item-image" src="img/item8.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$169</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="godown()">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">LEGO City</span>
+                    <h2>60130 Prison Island</h2>
+                    <img class="shop-item-image" src="img/item9.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$89</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="godown()">ADD TO CART</button>
+                    </div>
+                </div>
+        </section>
+        
+        <section class="container content-section">
+            <h2 class="section-header" id="here">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="img/item1.png" weight="120" height="120">
+                        <span class="cart-item-title">LEGO Star Wars 75212 Millennium Falcon</span>
+                    </div>
+                    <span class="cart-price cart-column">$99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">Remove</button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                        <div class="cart-item cart-column">
+                            <img class="cart-item-image" src="img/item2.png" weight="120" height="120">
+                            <span class="cart-item-title">LEGO Harry Potter 71043 Hogwarts Castle</span>
+                        </div>
+                        <span class="cart-price cart-column">$299</span>
+                        <div class="cart-quantity cart-column">
+                            <input class="cart-quantity-input" type="number" value="1">
+                            <button class="btn btn-danger" type="button">Remove</button>
+                        </div>
+                </div>
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$398</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+    </body>
+</html>

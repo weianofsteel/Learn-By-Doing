@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML5 Canvas Drawing Board</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">HTML5 Canvas Drawing Board</h1>
+        <div class="header__btns">
+            <img class="colorbtn" src="img/blue.png" onclick="toBlue()" />
+            <img class="colorbtn" src="img/red.png" onclick="toRed()" />
+            <img class="colorbtn" src="img/green.png" onclick="toGreen()" />
+            <img class="colorbtn" src="img/yellow.png" onclick="toYellow()" />
+            <img class="colorbtn" src="img/orange.png" onclick="toOrange()" />
+            <a href="" class="header__btn" id="js-clear">Clear</a>
+            <a href="" class="header__btn" id="js-download">Download Image</a>
+        </div>
+    </header>
+    <p class="description">Enjoy yourself !</p>
+    <canvas class="board" id="canvas" width="800" height="800"></canvas> 
+
+    <!--Scripts-->
+    <script src="main.js"></script>
+</body>
+
+</html>
